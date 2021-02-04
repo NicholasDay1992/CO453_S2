@@ -24,8 +24,10 @@ namespace ConsoleAppProject
             Console.WriteLine();
 
             DistanceConverter converter = new DistanceConverter();
-            converter.PrintHeading();
+            //converter.PrintHeading();
 
+
+            /*
             char distanceUnit = 'M';
 
             switch (distanceUnit)
@@ -34,6 +36,7 @@ namespace ConsoleAppProject
                 case (char)DistanceUnits.Miles: Console.WriteLine("Miles"); break;
                 default : Console.WriteLine("No input"); break;
             }
+            */
         }
     }
 }

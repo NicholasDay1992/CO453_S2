@@ -11,15 +11,37 @@ namespace ConsoleAppProject.App01
     /// </author>
     public class DistanceConverter
     {
+        public DistanceConverter()
+        {
+            PrintHeading();
+            OutputResult(ConvertMilesToFeet(GetMiles()));
+        }
         ///<summary>
         /// Output a heading
         ///</summary>
-        public void PrintHeading()
+        private void PrintHeading()
         {
             Console.WriteLine("\n------------------------");
             Console.WriteLine("\tConvert Distances");
             Console.WriteLine("\tBy Nick Day");
             Console.WriteLine("------------------------");
         }
+
+        private double GetMiles()
+        {
+            Console.WriteLine("Please enter the number of miles");
+            return Convert.ToDouble(Console.ReadLine());
+        }
+
+        private double ConvertMilesToFeet(double miles)
+        {
+            return (miles * 5280);
+        }
+
+        private void OutputResult(double result)
+        {
+            Console.WriteLine(result.ToString("0.00") + " feet");
+        }
+
     }
 }
