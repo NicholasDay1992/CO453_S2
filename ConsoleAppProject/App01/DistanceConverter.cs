@@ -1,4 +1,7 @@
-﻿namespace ConsoleAppProject.App01
+﻿using System;
+using System.Runtime;
+
+namespace ConsoleAppProject.App01
 {
     /// <summary>
     /// Please describe the main features of this App
@@ -8,6 +11,6 @@
     /// </author>
     public class DistanceConverter
     {
-
+        
     }
 }
