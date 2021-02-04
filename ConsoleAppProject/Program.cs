@@ -19,10 +19,21 @@ namespace ConsoleAppProject
             //Console.ForegroundColor = ConsoleColor.Yellow;
             
             Console.WriteLine("BNU CO453 Applications Programming 2020-2021!");
-            Console.WriteLine();
+            Console.WriteLine("Test output");
             //Console.Beep();
+            Console.WriteLine();
 
+            DistanceConverter converter = new DistanceConverter();
+            converter.PrintHeading();
 
+            char distanceUnit = 'M';
+
+            switch (distanceUnit)
+            {
+                case (char)DistanceUnits.Feet: Console.WriteLine("Feet"); break;
+                case (char)DistanceUnits.Miles: Console.WriteLine("Miles"); break;
+                default : Console.WriteLine("No input"); break;
+            }
         }
     }
 }

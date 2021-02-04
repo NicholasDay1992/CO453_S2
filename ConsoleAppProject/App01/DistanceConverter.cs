@@ -11,6 +11,15 @@ namespace ConsoleAppProject.App01
     /// </author>
     public class DistanceConverter
     {
-        
+        ///<summary>
+        /// Output a heading
+        ///</summary>
+        public void PrintHeading()
+        {
+            Console.WriteLine("\n------------------------");
+            Console.WriteLine("\tConvert Distances");
+            Console.WriteLine("\tBy Nick Day");
+            Console.WriteLine("------------------------");
+        }
     }
 }
