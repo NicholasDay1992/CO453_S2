@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime;
 using ConsoleAppProject.App01;
+using ConsoleAppProject.App02;
 
 namespace ConsoleAppProject
 {
@@ -10,33 +11,28 @@ namespace ConsoleAppProject
     /// to start Apps 01 to 05 for CO453 CW1
     /// 
     /// This Project has been modified by:
-    /// Nick Day 04/02/2021
+    /// Nick Day 05/02/2021
     /// </summary>
     public static class Program
     {
         public static void Main(string[] args)
         {
             //Console.ForegroundColor = ConsoleColor.Yellow;
-            
-            Console.WriteLine("BNU CO453 Applications Programming 2020-2021!");
-            Console.WriteLine("Test output");
-            //Console.Beep();
+
+            ConsoleHelper.OutputHeading("BNU CO453 Applications Programming 2020-2021!");
             Console.WriteLine();
+            
+            ConsoleHelper.OutputHeading("\tBMI Caclulator\n\tNick Day");
+            ConsoleHelper.OutputIntroduction("Insert BMI introduction here...");
 
-            DistanceConverter converter = new DistanceConverter();
-            //converter.PrintHeading();
+            BMI calculator = new BMI();
+            calculator.OutputUnits();
+            calculator.GetUnit();
+            calculator.GetWeight();
+            calculator.GetHeight();
+            calculator.CalculateBMI();
+            calculator.OutputResult();
 
-
-            /*
-            char distanceUnit = 'M';
-
-            switch (distanceUnit)
-            {
-                case (char)DistanceUnits.Feet: Console.WriteLine("Feet"); break;
-                case (char)DistanceUnits.Miles: Console.WriteLine("Miles"); break;
-                default : Console.WriteLine("No input"); break;
-            }
-            */
         }
     }
 }
