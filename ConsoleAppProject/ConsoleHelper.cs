@@ -13,6 +13,12 @@ namespace ConsoleAppProject
             Console.WriteLine("--------------------------------");
         }
 
+        public static string InputString(string prompt)
+        {
+            Console.WriteLine(prompt);
+            return Console.ReadLine();
+        }
+
         public static void OutputIntroduction(string introduction)
         {
             Console.WriteLine("======= Introduction ====== ");

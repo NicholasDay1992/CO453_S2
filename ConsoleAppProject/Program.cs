@@ -2,6 +2,7 @@
 using System.Runtime;
 using ConsoleAppProject.App01;
 using ConsoleAppProject.App02;
+using ConsoleAppProject.App04;
 
 namespace ConsoleAppProject
 {
@@ -22,9 +23,9 @@ namespace ConsoleAppProject
             ConsoleHelper.OutputHeading("BNU CO453 Applications Programming 2020-2021!");
             Console.WriteLine();
             
-            ConsoleHelper.OutputHeading("\tBMI Caclulator\n\tNick Day");
-            ConsoleHelper.OutputIntroduction("Insert BMI introduction here...");
-
+            //ConsoleHelper.OutputHeading("\tBMI Caclulator\n\tNick Day");
+            //ConsoleHelper.OutputIntroduction("Insert BMI introduction here...");
+            /*
             BMI calculator = new BMI();
             calculator.OutputUnits();
             calculator.GetUnit();
@@ -32,6 +33,10 @@ namespace ConsoleAppProject
             calculator.GetHeight();
             calculator.CalculateBMI();
             calculator.OutputResult();
+            */
+
+            NetworkApp news = new NetworkApp();
+            
 
         }
     }
