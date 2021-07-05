@@ -1,4 +1,5 @@
-﻿namespace ConsoleAppProject.App01
+﻿using System.ComponentModel;
+namespace ConsoleAppProject.App01
 {
     /// <summary>
     /// List of units used to measure distance
@@ -9,6 +10,6 @@
         Feet,
         Metres,
         Kilometres,
-        Miles
+        Miles,
     }
 }

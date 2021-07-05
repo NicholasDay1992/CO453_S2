@@ -1,0 +1,65 @@
+﻿@model ConsoleAppProject.App01.DistanceConverter
+@using ConsoleAppProject.App01
+@{
+    ViewData["Title"] = "Nick's Distance Converter";
+}
+<header>
+    <h1>DistanceConverter</h1>
+</header>
+
+<form method="post">
+    <label for="fromDistance">From Distance: </label>
+    @if (Model.FromDistance == 0)
+    {
+    <input type="text" placeholder="ToDistance"
+           asp-for="@Model.FromDistance" value="" />
+    }
+    else
+    {
+    <input type="text" placeholder="ToDistance"
+           asp-for="@Model.FromDistance" />
+    }
+
+
+    <label for="toDistance">To Distance</label>
+    @if (Model.ToDistance == 0)
+    {
+    <input type="text" placeholder="ToDistance"
+           asp-for="@Model.ToDistance" value="" />
+    }
+    else
+    {
+    <input type="text" placeholder="ToDistance"
+           asp-for="@Model.ToDistance" value="@Model.ToDistance.ToString("0.00")" />
+    }
+
+    <p>
+        <label>Choose a FROM unit:</label>
+
+        <select asp-for="@Model.FromUnit">
+            <option value="MILES">MILES</option>
+            <option value="FEET">FEET</option>
+            <option value="METRES">METRES</option>
+        </select>
+
+        <label>Choose a TO unit:</label>
+        <select asp-for="@Model.ToUnit">
+            <option value="MILES">MILES</option>
+            <option value="FEET">FEET</option>
+            <option value="METRES">METRES</option>
+        </select>
+    </p>
+
+
+
+    <p>
+        <button class="btn btn-success" type="submit">Calculate</button>
+    </p>
+</form>
+
+
+
+
+
+
+
